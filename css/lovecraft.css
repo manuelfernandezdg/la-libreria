@@ -1,0 +1,117 @@
+@font-face {
+    font-family: ArnoPro;
+    src: url(../fonts/Arno/ArnoPro-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ArnoPro;
+    src: url(../fonts/Arno/ArnoPro-Bold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ArnoPro;
+    src: url(../fonts/Arno/ArnoPro-BoldItalic.otf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ArnoPro;
+    src: url(../fonts/Arno/ArnoPro-Italic.otf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ArnoPro;
+    src: url(../fonts/Arno/ArnoPro-LightDisplay.otf);
+    font-weight: lighter;
+    font-style: normal;
+}
+
+:root {
+    --negro: #07020D;
+    --blanco: #FFFFFF;
+    --fondo: #F1E9DB;
+    --overlay: #5DB7DE;
+    --marron1: #A39B8B;
+    --marron2: #716A5C;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo);
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+#bienvenida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/fondo_landing_2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#bienvenida img {
+    width: 80%;
+    max-width: 900px;
+}
+
+#libro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    font-family: ArnoPro;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Texto adaptable */
+#libro h1 {
+    font-size: 5vmin; /* vmin es viewport mínimo, vmax viewport máximo */
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+}
+
+#libro h2 {
+    font-family: ArnoPro;
+    font-weight: lighter;
+    font-size: 3.5vmin;
+    margin: 0;
+}
+
+#libro p {
+    font-family: ArnoPro;
+    font-weight: lighter;
+    font-size: 3vmin;
+    margin: 0;
+}
+
+#libro article, #libro img {
+    width: 45%;
+    max-width: 500px;
+}
+
+#libro img {
+    max-width: 300px;
+    margin-left: 30px;
+}

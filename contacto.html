@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Libreria - Log In</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logo.svg" alt="Bienvenidos a La Librería"></a>
+            <ul>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+            <form action="" method="GET">
+                <label>
+                    <input type="text" name="buscar">
+                </label>
+                <button>Buscar</button>
+            </form>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="contacto">
+            <h1>Contacto</h1>
+
+            <form action="" method="" enctype="multipart/form-data">
+                <label>
+                    Nombre
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                </label>
+                <label>
+                    Apellido
+                    <input type="text" name="apellido" id="apellido" required>
+                </label>
+                <label>Email
+                    <input type="email" name="email" id="email" required>
+                </label>
+                <label>
+                    Contraseña
+                    <input type="password" name="contraseña">
+                </label>
+                <label>
+                    Ingrese su mensaje
+                    <textarea name="" id="" placeholder="Ingrese su mensaje"></textarea>
+                </label>
+                <label>
+                    ¿Quiere recibir nuestro newsletter?
+                    Si <input class="radio" type="radio" name="newsletter" value="si" checked>
+                    No <input class="radio" type="radio" name="newsletter" value="no">
+                </label>
+                <label>
+                    <input class="enviar" type="submit" value="Enviar">
+                </label>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li>Av. Rivadavia 1755 CABA</li>
+                <li>011-4444-6666</li>
+                <li>contacto@lalibreria.com.ar</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

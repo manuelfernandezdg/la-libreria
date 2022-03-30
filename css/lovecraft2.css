@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+}
+
+img {
+    width: 80%;
+    max-width: 900px;
+}
+
+#libro {
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/fondo_landing_2.jpg);
+    background-repeat: no-repeat; /* repeat-x, para el eje horizontal y repeat-y para el vertical */
+    background-position: top center; /* top, bottom, left, right, center */
+    background-size: cover; /* Estira la imagen para cubrir siempre el alto y ancho, manteniendo la relación*/
+
+    background-attachment: fixed; /* controla el moviento del fondo cuando hacemos scroll */
+}
+
+#descripcion {
+    height: 100vh;
+    background-color: #F1E9DB;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 1em;
+
+    width: 35vw;
+    max-width: 465.5px;
+}
+
+#descripcion img {
+    width: 25vw;
+    max-width: 330px;
+}
+
+h1, 
+h2,
+p {
+    margin: 0;
+}
+
+.contenedor h1 {
+    font-size: 3.8vh;
+}
+
+.contenedor h2 {
+    font-size: 3.5vh;
+}
+
+.contenedor p {
+    font-size: 2vh;
+}

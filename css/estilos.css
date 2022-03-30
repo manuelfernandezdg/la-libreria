@@ -1,0 +1,257 @@
+/* Mi fuente, Montserrat, Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,400;1,500;1,800&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+/*
+    Reglas de estilo para el uso de ambas familias tipográficas
+    Montserrat
+    font-family: 'Montserrat', sans-serif;
+    font-weight 400 500 800
+
+    Roboto
+    font-family: 'Roboto', sans-serif;
+    font-weight 100
+*/
+
+/* Guía de colores */
+:root {
+    --negro: #07020D;
+    --blanco: #FFFFFF;
+    --fondo: #F1E9DB;
+    --overlay: #5DB7DE;
+    --marron1: #A39B8B;
+    --marron2: #716A5C;
+    --transparente: rgba(0, 0, 0, 0);
+
+    --contenedor: 1400px;
+}
+
+* {
+    text-decoration: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--fondo);
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    text-align: center;
+    width: 100%;
+    max-width: var(--contenedor);
+}
+
+h1, 
+h2, 
+h3 {
+    margin:0;
+}
+
+h1 {
+    font-size: 2.5em; /* em es el tamaño de fuente del contenedor */
+    color: var(--negro);
+    font-weight: 400;
+    margin: 0.5em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: var(--negro);
+    font-weight: 400;
+}
+
+/* Encabezado y barra de navegación */
+header {
+    background-color: var(--negro);
+    color: var(--fondo);
+
+    border-bottom: 5px solid var(--overlay); /* tamaño o grosor, estilo y color */
+
+    display: flex;
+    justify-content: center;
+}
+
+/* El link en reposo, El link visitado */
+nav a:link,
+nav a:visited {
+    color: var(--blanco);
+    margin-right: 1em;
+    font-weight: 500;
+}
+
+/* Cuando pasamos por arriba con el mouse, El link cuando hacemos click */
+nav a:hover, 
+nav a:active  {
+    color: var(--overlay);
+}
+
+/* Buscador */
+nav form input {
+    margin-right: 0.8em;
+    padding: 0.8em 1em;
+    border: 2px solid var(--marron2);
+    border-radius: 1em;
+}
+
+nav form button {
+    padding: 0.8em 1em;
+    border: 2px solid var(--marron2);
+    border-radius: 1em;
+    background-color: var(--overlay);
+    color: var(--blanco);
+}
+
+nav form button:hover,
+nav form input:focus {
+    border: 2px solid var(--overlay);
+}
+
+/* Flex para nuestra barra de navegación */
+nav {
+    min-height: 120px;
+    width: 100%;
+    max-width: var(--contenedor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Portada de Bienvenida*/
+#bienvenida img {
+    max-width: 100%;
+}
+
+/* Sección Novedades */
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em
+}
+
+article {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Solución al problema del borde de la imagen que rompe la maqueta */
+article img {
+    border: 10px solid var(--transparente);/* El borde existe antes de que hagamos hover sobre el elemento, de esta manera no hay desplazamiento*/
+    border-radius: 1em;
+    max-width: 100%;
+}
+
+article div img:hover {
+    border: 10px solid var(--overlay);
+    box-sizing: border-box;
+}
+
+/* El link en reposo, El link visitado */
+a.principal:link,
+a.principal:visited {
+    color: var(--negro);
+    border: 2px solid var(--overlay);
+    border-radius: 1em;
+    padding: 15px 25px;
+
+    display: inline-block;
+}
+
+/* Cuando pasamos por arriba con el mouse, El link cuando hacemos click */
+a.principal:hover, 
+a.principal:active  {
+    background-color: var(--overlay);
+    border: 2px solid var(--negro);
+}
+
+
+/* Formularios */
+section form {
+    max-width: 550px;
+    margin: 0 auto 100px;
+}
+
+section label {
+    display: block;
+    margin: 20px 0;
+}
+
+section input, 
+section textarea,
+section select {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 3px solid var(--marron2);
+}
+
+section textarea {
+    min-height: 200px;
+}
+
+section input:focus,
+section textarea:focus,
+section select  {
+    border-bottom: 3px solid var(--overlay);
+}
+
+section .radio,
+section .check {
+    display: inline;
+    width: auto;
+}
+
+section .enviar {
+    width: 100%;
+    max-width: 200px;
+    background-color: var(--overlay);
+    padding: 10px 15px;
+    border: none;
+    font-weight: 800;
+}
+
+section .input {
+    border: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Sección de Pié de Página */
+footer {
+    background-color: var(--marron2);
+    margin-top: 1em;
+}
+
+footer div {
+    text-align: center;
+    min-height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

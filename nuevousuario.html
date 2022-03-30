@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Libreria - Registro</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="img/logo.svg" alt="Bienvenidos a La Librería">
+            <ul>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+            <form action="" method="GET">
+                <label>
+                    <input type="text" name="buscar">
+                </label>
+                <button>Buscar</button>
+            </form>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="contacto">
+            <h1>Registro</h1>
+
+            <form action="" method="" enctype="multipart/form-data">
+                <label>
+                    Ingrese su nombre
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                </label>
+                <label>
+                    Ingrese su apellido
+                    <input type="text" name="apellido">
+                </label>
+                <label>
+                    Foto de Perfil:
+                    <input class="input" type="file" name="fotoPerfil" id="fotoPerfil">
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Provincia:
+                    <select name="Provincia">
+                        <option value="Ciudad de Buenos Aires" selected="">Ciudad de Buenos Aires</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Ríos">Entre Ríos</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Río Negro">Río Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucuman">Tucuman</option>
+                    </select>
+                </label>
+                <label>
+                    Su contraseña:
+                    <input type="password" required name="password">
+                </label>
+                <label>
+                    Repita su contraseña:
+                    <input type="password" required name="checkPassword">
+                </label>
+                <label>
+                    ¿Acepta los términos y condiciones? <input class="check" type="checkbox" name="acepta" value="acepta" required> Si, acepto los términos y condiciones.
+                </label>
+                <label>
+                    <input class="enviar" type="submit" value="Enviar">
+                </label>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li>Av. Rivadavia 1755 CABA</li>
+                <li>011-4444-6666</li>
+                <li>contacto@lalibreria.com.ar</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
