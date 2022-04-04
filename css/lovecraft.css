@@ -86,7 +86,8 @@ section {
 
 /* Texto adaptable */
 #libro h1 {
-    font-size: 5vmin; /* vmin es viewport mínimo, vmax viewport máximo */
+    /* font-size: 5vmin; vmin es viewport mínimo, vmax viewport máximo */
+    font-size: clamp(1.8em, 5vw, 2.5em);
     font-weight: normal;
     font-style: normal;
     margin: 0;
@@ -95,23 +96,24 @@ section {
 #libro h2 {
     font-family: ArnoPro;
     font-weight: lighter;
-    font-size: 3.5vmin;
+    font-size: clamp(1.5em, 3vw, 2em);
     margin: 0;
 }
 
 #libro p {
     font-family: ArnoPro;
     font-weight: lighter;
-    font-size: 3vmin;
+    font-size: clamp(1.2em, 2vw, 1.5em);
     margin: 0;
 }
 
-#libro article, #libro img {
+#libro article {
     width: 45%;
     max-width: 500px;
 }
 
 #libro img {
+    width: 45%;
     max-width: 300px;
     margin-left: 30px;
 }

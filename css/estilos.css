@@ -61,11 +61,11 @@ section {
 h1, 
 h2, 
 h3 {
-    margin:0;
+    margin: 0;
 }
 
 h1 {
-    font-size: 2.5em; /* em es el tamaño de fuente del contenedor */
+    font-size: 2.5em;
     color: var(--negro);
     font-weight: 400;
     margin: 0.5em 0;
@@ -175,7 +175,7 @@ a.principal:visited {
     border: 2px solid var(--overlay);
     border-radius: 1em;
     padding: 15px 25px;
-
+    
     display: inline-block;
 }
 
@@ -242,6 +242,147 @@ section .input {
     text-align: center;
 }
 
+/* Detalle de los libros */
+#libros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+}
+
+#libros img {
+    width: 80%;
+    max-width: 360px;
+    margin-right: 30px;
+}
+
+.derecha {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 600px;
+    gap: 0.8em;
+}
+
+#libros h1, 
+#libros h2,
+#libros h3, 
+#libros p, 
+#libros ul {
+    margin: 0;
+    padding: 0;
+}
+
+#libros h3 {
+    font-size: 2.5em;
+    color: var(--negro);
+    font-weight: 400;
+}
+
+#libros i {
+    font-size: 1.5em;
+    color: var(--marron2);
+    margin-right: 1em;
+}
+
+#libros i:hover {
+    color: var(--overlay);
+    cursor: pointer;
+}
+
+#libros p {
+    line-height: 1.5em;
+}
+
+#libros button {
+    background-color: var(--fondo);
+    font-size: 1.3em;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    color: var(--negro);
+    border: 2px solid var(--overlay);
+    border-radius: 1em;
+    padding: 15px 25px;
+}
+
+#libros button:hover {
+    background-color: var(--overlay);
+    border-color: var(--negro);
+}
+
+/* Sobre Nosotros */
+.contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1em;
+    padding-top: 2em;
+}
+
+.direccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+#sobrenosotros video {
+    width: 65%;
+    height: auto;
+}
+
+#sobrenosotros p {
+    line-height: 1.8em;
+}
+
+#sobrenosotros i {
+    font-size: 2em;
+    margin-right: 2em;
+}
+
+#sobrenosotros iframe {
+    display: block;
+    width: 100%;
+    max-width: var(--contenedor);
+    margin: 2em auto;
+    border: none;
+    height: 600px;
+}
+
+/* Catálogo */
+#catalogo table {
+    margin: 0 auto;
+    width: min(90%, 1400px);
+}
+
+#catalogo img {
+    max-width: 100%;
+}
+
+#catalogo th, td {
+    padding: 1em;
+}
+
+#catalogo th {
+    background-color: var(--overlay);
+}
+
+#catalogo td {
+    background-color: var(--marron1);
+}
+
+#catalogo tr:nth-child(odd) td {
+    background-color: var(--marron2);
+}
+
+#catalogo tr:hover td {
+    background-color: #5DB7DE;
+}
+
 /* Sección de Pié de Página */
 footer {
     background-color: var(--marron2);
@@ -254,4 +395,7 @@ footer div {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-weight: 500;
+    color: var(--fondo);
 }
